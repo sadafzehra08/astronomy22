@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+           @media (max-width: 750px) {
+    #nav-menu {
+      display: none; /* Hide menu on mobile */
+      flex-direction: column;
+      /* gap: 10px; */
+      background-color: #000000cc;
+      /* padding: 10px; */
+    }
+
+    #menu-btn {
+      display: block; /* Show hamburger icon */
+    }
+
+    #menu-btn:checked + #nav-menu {
+      display: flex; /* Display menu when clicked */
+    }
+
+    /* Adding a label to trigger checkbox */
+    input[type="checkbox"]:checked + #nav-menu {
+      display: block;
+    }
+  }
+    </style>
+</head>
+<body>
+
+  <header style="position: relative; top: 0; left: 0; width: 100%; background-color: rgba(51, 51, 51, 0.8); color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
+    <a href="#" style="font-size: 30px; font-weight: bold; text-decoration: none; color: white;">Astronix</a>
+  
+    <!-- Hamburger Menu for Mobile -->
+    <div id="menu-btn" style="font-size: 24px; color: white; cursor: pointer; display: none;">☰</div>
+  
+    <!-- Navigation Links -->
+    <nav id="nav-menu" style="display: flex; gap: 15px;">
+      <a href="indexone.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="cosmic.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">Cosmic Wonders</a>
+      <a href="latest.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">Latest News</a>
+      <a href="location.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">See Our Location</a>
+    
+    </nav>
+  </header>
+
+    <section class="planets_section">
+        <div class="heading">
+          <h1>
+            <span class="hs1">Explore</span><span class="hs2"> Planets</span
+            ><span class="hs3"> Here...</span>
+          </h1>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card_box_left">
+              <a href="#"><img src="mercury-11591_640.png" alt="" /></a>
+            </div>
+            <div class="card_box_right">
+              <h1 class="card_box_right_heading">
+                <span class="cs1">Mercury</span>
+              </h1>
+              <p class="card_box_right_para">
+                Mercury is the closest planet to the sun and also the smallest
+                planet in the solar system. The small and cratered planet does not
+                have any moons and zips around the sun faster than any other
+                planet in the solar system, hence why the Romans named it after
+                their swift-footed messenger god.
+              </p>
+              <a href="index1.html" class="card_box_right_btn">Read More</a>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card_box_right">
+              <h1 class="card_box_right_heading">
+                <span class="cs2">Earth</span>
+              </h1>
+              <p class="card_box_right_para">
+                Earth, our home planet, is a world unlike any other. The third
+                planet from the sun, Earth is the only place in the known universe
+                confirmed to host life. With a radius of 3,959 miles, Earth is the
+                fifth largest planet in our solar system, and it's the only one
+                known for sure to have liquid water on its surface.
+              </p>
+              <a href="index2.html" class="card_box_right_btn">Read More</a>
+            </div>
+            <div class="card_box_left">
+              <a href="#"
+                ><img src="earth-11009_640-removebg-preview.png" alt=""
+              /></a>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card_box_left">
+              <a href="#"
+                ><img src="venus-11022_640-removebg-preview.png" alt=""
+              /></a>
+            </div>
+            <div class="card_box_right">
+              <h1 class="card_box_right_heading">
+                <span class="cs3">Venus</span>
+              </h1>
+              <p class="card_box_right_para">
+                Venus is the second planet from the Sun, and the sixth largest
+                planet. It's the hottest planet in our solar system. Venus is a
+                cloud-swaddled planet and our nearest planetary neighbor. It has a
+                surface hot enough to melt lead.
+              </p>
+              <a href="index3.html" class="card_box_right_btn">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_box_right">
+              <h1 class="card_box_right_heading">
+                <span class="cs4">Mars</span>
+              </h1>
+              <p class="card_box_right_para">
+                Mars is no place for the faint-hearted. It's dry, rocky, and
+                bitter cold. The fourth planet from the Sun, Mars, is one of
+                Earth's two closest planetary neighbors (Venus is the other). Mars
+                is one of the easiest planets to spot in the night sky — it looks
+                like a bright red point of light.
+              </p>
+              <a href="index4.html" class="card_box_right_btn">Read More</a>
+            </div>
+            <div class="card_box_left">
+              <a href="#"
+                ><img
+                  src="mars-5564141_640-removebg-preview.png"
+                  alt=""
+                  class="img4"
+                  id="mars"
+              /></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_box_left">
+              <a href="#"><img src="space-4869815_1280.jpg" alt="" /></a>
+            </div>
+            <div class="card_box_right">
+              <h1 class="card_box_right_heading">
+                <span class="cs5">Jupiter</span>
+              </h1>
+              <p class="card_box_right_para">
+                Jupiter is the fifth planet from the Sun and the largest in the
+                Solar System. It is a gas giant with a mass more than 2.5 times
+                that of all the other planets in the Solar System combined and
+                slightly less than one-thousandth the mass of the Sun. Its
+                diameter is eleven times that of Earth, and a tenth that of the
+                Sun.
+              </p>
+              <a href="index5.html" class="card_box_right_btn">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_box_right">
+              <h1 class="card_box_right_heading">
+                <span class="cs6">Saturn</span>
+              </h1>
+              <p class="card_box_right_para">
+                Saturn took shape when the rest of the solar system formed about
+                4.5 billion years ago when gravity pulled swirling gas and dust in
+                to become this gas giant. About 4 billion years ago, Saturn
+                settled into its current position in the outer solar system, where
+                it is the sixth planet from the Sun.
+              </p>
+              <a href="index6.html" class="card_box_right_btn">Read More</a>
+            </div>
+            <div class="card_box_left">
+              <a href="#"><img src="rhea-11019_640.jpg" alt="" class="img4" /></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_box_left">
+              <a href="#"><img src="uranus-6063396_640.jpg" alt="" /></a>
+            </div>
+            <div class="card_box_right">
+              <h1 class="card_box_right_heading">
+                <span class="cs7">Uranus</span>
+              </h1>
+              <p class="card_box_right_para">
+                Uranus is a very cold and windy world. The ice giant is surrounded
+                by 13 faint rings and 28 small moons. Uranus rotates at a nearly
+                90-degree angle from the plane of its orbit. This unique tilt
+                makes Uranus appear to spin sideways, orbiting the Sun like a
+                rolling ball.
+              </p>
+              <a href="index7.html" class="card_box_right_btn">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_box_right">
+              <h1 class="card_box_right_heading">
+                <span class="cs8">Neptune</span>
+              </h1>
+              <p class="card_box_right_para">
+                Neptune, third most massive planet of the solar system and the
+                eighth and outermost planet from the Sun. Because of its great
+                distance from Earth, it cannot be seen with the unaided eye. With
+                a small telescope, it appears as a tiny, faint blue-green disk. It
+                is designated by the symbol ♆
+              </p>
+              <a href="index8.html" class="card_box_right_btn">Read More</a>
+            </div>
+            <div class="card_box_left">
+              <a href="#"><img src="neptune-67537_640.jpg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+      <footer style="background-color: hsl(210, 21%, 11%); color: white; text-align: center; padding: 20px; position: relative; width: 100%; bottom: 0;">
+        <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+          <!-- About Section -->
+          <div style="flex: 1; min-width: 200px; margin: 10px;">
+            <h3 style="border-bottom: 2px solid white; display: inline-block; padding-bottom: 5px;">About Us</h3>
+            <p style="margin-top: 10px;">We provide engaging content about space, science, and the wonders of the universe. Stay curious!</p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div style="flex: 1; min-width: 200px; margin: 10px;">
+            <h3 style="border-bottom: 2px solid white; display: inline-block; padding-bottom: 5px;">Quick Links</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; margin-top: 10px;">
+              <li><a href="indexone.html" style="color: white; text-decoration: none; margin-bottom: 8px; display: block;">Home</a></li>
+              <li><a href="cosmic.html" style="color: white; text-decoration: none; margin-bottom: 8px; display: block;">Cosmic Wonders</a></li>
+              <li><a href="latest.html" style="color: white; text-decoration: none; margin-bottom: 8px; display: block;">Latest News</a></li>
+              <li><a href="location.html" style="color: white; text-decoration: none; margin-bottom: 8px; display: block;">See Our Location</a></li>
+              
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div style="flex: 1; min-width: 200px; margin: 10px;">
+            <h3 style="border-bottom: 2px solid white; display: inline-block; padding-bottom: 5px;">Contact Us</h3>
+            <p style="margin-top: 10px;">Email: info@Astronix.com</p>
+            <p>Phone: +123 456 7890</p>
+          </div>
+        </div>
+        <div style="margin-top: 20px; border-top: 1px solid white; padding-top: 10px;">
+          <p>© 2024 Astronix. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

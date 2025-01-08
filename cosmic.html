@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmic Wonders</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (max-width: 750px) {
+   #nav-menu {
+     display: none; /* Hide menu on mobile */
+     flex-direction: column;
+     background-color: rgba(51, 51, 51, 0.8);
+   }
+
+   #menu-btn {
+     display: block; /* Show hamburger icon */
+   }
+
+   #menu-btn:checked + #nav-menu {
+     display: flex; /* Display menu when clicked */
+   }
+
+   /* Adding a label to trigger checkbox */
+   input[type="checkbox"]:checked + #nav-menu {
+     display: block;
+   }
+ }
+   </style>
+  </head>
+  <body>
+    <!-- <header class="navbar">
+        <a href="#" class="brand">Astronix</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation_items">
+            <a href="#" id="a1">Home</a>
+            <a href="#" id="a3">Cosmic Wonders</a>
+            <a href="#" id="a4">Latest News</a>
+          </div>
+        </div>
+      </header> -->
+      <header style=" top: 0; left: 0; width: 100%; background-color: rgba(51, 51, 51, 0.8); color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
+        <a href="indexone.html" style="font-size: 30px; font-weight: bold; text-decoration: none; color: white;">Astronix</a>
+        
+        <!-- Hamburger Menu for Mobile (Checkbox Hack) -->
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <label for="menu-toggle" style="font-size: 24px; color: white; cursor: pointer; display: none;">☰</label>
+      
+        <!-- Navigation Links -->
+        <nav id="nav-menu" style="display: flex; gap: 15px;">
+          <a href="indexone.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+          <a href="cosmic.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">Cosmic Wonders</a>
+          <a href="latest.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">Latest News</a>
+          <a href="location.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">See Our Location</a>
+        </nav>
+      </header>
+
+
+      <!-- <h1 style="color: white; font-size: 3rem;">Cosmic Wonders</h1> -->
+    <div class="cosmic_div">
+         <h1><span class="hs1">Cosmic</span><span class="hs2"> Wonders</span></h1> 
+    </div>
+
+    <section class="big_bang_theory" style="margin-top: 2rem">
+
+
+      <div class="heading_bbt">
+        <h1>
+          <span class="hs1">Comet</span>
+        </h1>
+      </div>
+      <div class="bbt_box">
+        <div class="bbt_box_left">
+          <video src="comets.mp4" autoplay loop muted></video>
+          <!-- <img src="bbt.jpg" alt="bbt" class="bbt_img" /> -->
+        </div>
+        <div class="bbt_box_right">
+          <h1 class="bbt_1">Comets</h1>
+          <p class="bbt_p">
+            Comets are icy celestial objects that orbit the Sun, often described
+            as "dirty snowballs" made of dust, rock, and frozen gases. When they
+            approach the Sun, the heat causes their ice to vaporize, creating a
+            glowing coma and a distinct tail that can stretch millions of
+            kilometers.
+          </p>
+          <a href="comets.html" class="bbt_btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="big_bang_theory" id="box_eoe">
+      <div class="heading_bbt">
+        <h1 id="eoe">
+          <span class="hs2">Constillations</span>
+        </h1>
+      </div>
+      <div class="bbt_box" id="bbt_box2">
+        <div class="bbt_box_right">
+          <h1 class="bbt_1">Constillations</h1>
+          <p class="bbt_p">
+            Constellations are patterns of stars visible in the night sky,
+            forming shapes that ancient civilizations associated with myths,
+            animals, or objects. They serve as celestial maps, helping in
+            navigation and identifying specific regions of the sky. Examples
+            include Orion, known for its "hunter" shape and bright stars
+            Betelgeuse and Rigel, and Ursa Major, famous for the Big Dipper
+            asterism.
+          </p>
+          <a href="constillations.html" class="bbt_btn">Read More</a>
+        </div>
+        <div class="bbt_box_left" id="bbt_box_left">
+          <!-- <img src="bbt.jpg" alt="bbt" class="bbt_img" /> -->
+          <video src="constillations.mp4" autoplay loop muted></video>
+        </div>
+      </div>
+    </section>
+    <footer
+    style="
+      background-color: hsl(210, 21%, 11%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    "
+  >
+    <div
+      style="
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      "
+    >
+      <!-- About Section -->
+      <div style="flex: 1; min-width: 200px; margin: 10px">
+        <h3
+          style="
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 5px;
+          "
+        >
+          About Us
+        </h3>
+        <p style="margin-top: 10px">
+          We provide engaging content about space, science, and the wonders of
+          the universe. Stay curious!
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div style="flex: 1; min-width: 200px; margin: 10px">
+        <h3
+          style="
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 5px;
+          "
+        >
+          Quick Links
+        </h3>
+        <ul style="list-style: none; padding: 0; margin: 0; margin-top: 10px">
+          <li>
+            <a
+              href="indexone.html"
+              style="
+                color: white;
+                text-decoration: none;
+                margin-bottom: 8px;
+                display: block;
+              "
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="cosmic.html"
+              style="
+                color: white;
+                text-decoration: none;
+                margin-bottom: 8px;
+                display: block;
+              "
+              >Cosmic Wonders</a
+            >
+          </li>
+          <li>
+            <a
+              href="latest.html"
+              style="
+                color: white;
+                text-decoration: none;
+                margin-bottom: 8px;
+                display: block;
+              "
+              >Latest News</a
+            >
+          </li>
+          <li>
+            <a
+              href="location.html"
+              style="
+                color: white;
+                text-decoration: none;
+                margin-bottom: 8px;
+                display: block;
+              "
+              >See Our Location</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div style="flex: 1; min-width: 200px; margin: 10px">
+        <h3
+          style="
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 5px;
+          "
+        >
+          Contact Us
+        </h3>
+        <p style="margin-top: 10px">Email: info@Astronix.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+    </div>
+    <div
+      style="margin-top: 20px; border-top: 1px solid white; padding-top: 10px"
+    >
+      <p>© 2024 Astronix. All rights reserved.</p>
+    </div>
+  </footer>
+  </body>
+</html>

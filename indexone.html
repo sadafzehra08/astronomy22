@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astronix</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+       @media (max-width: 750px) {
+    #nav-menu {
+      display: none; /* Hide menu on mobile */
+      flex-direction: column;
+      /* gap: 10px; */
+      background-color: rgba(51, 51, 51, 0.8);
+      /* padding: 10px; */
+    }
+
+    #menu-btn {
+      display: block; /* Show hamburger icon */
+    }
+
+    #menu-btn:checked + #nav-menu {
+      display: flex; /* Display menu when clicked */
+    }
+
+    /* Adding a label to trigger checkbox */
+    input[type="checkbox"]:checked + #nav-menu {
+      display: block;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <div class="landing_page">
+      <img src="earth-1617121_1920.jpg" alt="" />
+      <!-- <header>
+        <div class="menu-btn"></div>
+        <div class="items">
+          <a href="#" class="logo">Astronix</a>
+          <div class="pages">
+            <a href="#">Home</a>
+            <a href="#">Comets & Constillations</a>
+            <a href="#">Latest News</a>
+          </div>
+          <a href="#" class="contact_btn">Contact Us</a>
+        </div>
+      </header> -->
+      <header style="position: absolute; top: 0; left: 0; width: 100%; background-color: rgba(51, 51, 51, 0.8); color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
+        <a href="indexone.html" style="font-size: 30px; font-weight: bold; text-decoration: none; color: white;">Astronix</a>
+      
+        <!-- Hamburger Menu for Mobile -->
+        <div id="menu-btn" style="font-size: 24px; color: white; cursor: pointer; display: none;">☰</div>
+      
+        <!-- Navigation Links -->
+        <nav id="nav-menu" style="display: flex; gap: 15px;">
+          <a href="indexone.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+          <a href="cosmic.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">Cosmic Wonders</a>
+          <a href="latest.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">Latest News</a>
+          <a href="location.html" style="color: white; text-decoration: none; padding: 8px 12px; transition: background 0.3s ease;" onmouseover="this.style.backgroundColor='#575757'" onmouseout="this.style.backgroundColor='transparent'">See Our Location</a>
+        
+        </nav>
+      </header>
+     
+      <div class="main_page">
+        <div class="box_left">
+          <h1 class="box_left_heading">
+            <span class="s1">THE</span><br /><span class="s2"> ASTRONOMY</span>
+            <span class="s3">WORLD</span>
+          </h1>
+          <p class="box_left_para">
+            Astronomy is the scientific study of celestial objects such as
+            stars, planets, comets, and galaxies, as well as phenomena that
+            occur outside Earth's atmosphere. It seeks to understand the
+            origins, evolution, and behavior of the universe. By observing the
+            night sky and using advanced technology, astronomers decode the
+            mysteries of space and time. It combines principles from physics,
+            chemistry, and mathematics to explain cosmic events. Through
+            astronomy, we uncover humanity's place in the vast, ever-expanding
+            universe.
+          </p>
+        </div>
+        <div class="box_right">
+          <img src="ai-generated-8615835_640.png" alt="" class="img1" />
+        </div>
+      </div>
+    </div>
+
+    <section class="big_bang_theory">
+      <div class="heading_bbt">
+        <h1>
+          <span class="hs1">Big</span><span class="hs2"> Bang</span
+          ><span class="hs3"> Theory</span>
+        </h1>
+      </div>
+      <div class="bbt_box">
+        <div class="bbt_box_left">
+          <video src="bbt.mp4" autoplay loop muted></video>
+          <!-- <img src="bbt.jpg" alt="bbt" class="bbt_img" /> -->
+        </div>
+        <div class="bbt_box_right">
+          <h1 class="bbt_1">Big Bang Theory</h1>
+          <p class="bbt_p">
+            The Big Bang theory is an explanation of the early development of
+            the Universe. According to this theory the Universe expanded from an
+            extremely small, extremely hot, and extremely dense state. Since
+            then it has expanded and become less dense and cooler.
+          </p>
+          <a href="bbt.html" class="bbt_btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="big_bang_theory" id="box_eoe">
+      <div class="heading_bbt">
+        <h1 id="eoe">
+          <span class="hs1">Evolution</span><span class="hs2"> OF</span>
+          <span class="hs3"> Earth</span>
+        </h1>
+      </div>
+      <div class="bbt_box" id="bbt_box2">
+        <div class="bbt_box_right">
+          <h1 class="bbt_1">Evolution OF Earth</h1>
+          <p class="bbt_p">
+            As the Earth started to grow, about 4.56 billion years ago, the
+            heavy iron sank to the center, and the lighter silicates rose to the
+            surface. Heat generated from impacts of other bodies kept the early
+            Earth molten. In fact, the planet's entire outer layer may have been
+            liquid, an idea that came from studying the Moon.
+          </p>
+          <a href="eoe.html" class="bbt_btn">Read More</a>
+        </div>
+        <div class="bbt_box_left" id="bbt_box_left">
+          <!-- <img src="bbt.jpg" alt="bbt" class="bbt_img" /> -->
+          <video src="eoe.mp4" autoplay loop muted></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="big_bang_theory" id="solar_system">
+      <div class="heading_bbt">
+        <h1><span class="hs1">Solar</span><span class="hs2"> System</span></h1>
+      </div>
+      <div class="bbt_box">
+        <div class="bbt_box_left">
+          <video src="planets.mp4" autoplay loop muted></video>
+          <!-- <img src="bbt.jpg" alt="bbt" class="bbt_img" /> -->
+        </div>
+        <div class="bbt_box_right">
+          <h1 class="bbt_1">Planets</h1>
+          <p class="bbt_p">
+            Planets are celestial bodies that orbit a star, like the Sun in our
+            solar system. Each planet is unique, varying in size, composition,
+            and distance from its star. Some, like Earth, are rocky and support
+            life, while others, like Jupiter, are massive gas giants with no
+            solid surface.
+          </p>
+          <a href="planets.html" class="bbt_btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background-color: hsl(210, 21%, 11%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+      "
+    >
+      <div
+        style="
+          max-width: 1200px;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <!-- About Section -->
+        <div style="flex: 1; min-width: 200px; margin: 10px">
+          <h3
+            style="
+              border-bottom: 2px solid white;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            About Us
+          </h3>
+          <p style="margin-top: 10px">
+            We provide engaging content about space, science, and the wonders of
+            the universe. Stay curious!
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div style="flex: 1; min-width: 200px; margin: 10px">
+          <h3
+            style="
+              border-bottom: 2px solid white;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            Quick Links
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0; margin-top: 10px">
+            <li>
+              <a
+                href="indexone.html"
+                style="
+                  color: white;
+                  text-decoration: none;
+                  margin-bottom: 8px;
+                  display: block;
+                "
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="cosmic.html"
+                style="
+                  color: white;
+                  text-decoration: none;
+                  margin-bottom: 8px;
+                  display: block;
+                "
+                >Cosmic Wonders</a
+              >
+            </li>
+            <li>
+              <a
+                href="latest.html"
+                style="
+                  color: white;
+                  text-decoration: none;
+                  margin-bottom: 8px;
+                  display: block;
+                "
+                >Latest News</a
+              >
+            </li>
+            <li>
+              <a
+                href="location.html"
+                style="
+                  color: white;
+                  text-decoration: none;
+                  margin-bottom: 8px;
+                  display: block;
+                "
+                >See Our Location</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div style="flex: 1; min-width: 200px; margin: 10px">
+          <h3
+            style="
+              border-bottom: 2px solid white;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            Contact Us
+          </h3>
+          <p style="margin-top: 10px">Email: info@Astronix.com</p>
+          <p>Phone: +123 456 7890</p>
+        </div>
+      </div>
+      <div
+        style="margin-top: 20px; border-top: 1px solid white; padding-top: 10px"
+      >
+        <p>© 2024 Astronix. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+// function toggleMenu() {
+//     const navMenu = document.getElementById('nav-menu');
+//     const isVisible = navMenu.style.display === 'flex';
+//     navMenu.style.display = isVisible ? 'none' : 'flex';
+//   }
+
+//   // Responsive Behavior
+//   window.addEventListener('resize', () => {
+//     const menuBtn = document.getElementById('menu-btn');
+//     const navMenu = document.getElementById('nav-menu');
+//     if (window.innerWidth > 768) {
+//       navMenu.style.display = 'flex';
+//       menuBtn.style.display = 'none';
+//     } else {
+//       navMenu.style.display = 'none';
+//       menuBtn.style.display = 'block';
+//     }
+//   });
+
+//   // Initialize Responsive Menu
+//   if (window.innerWidth <= 768) {
+//     document.getElementById('menu-btn').style.display = 'block';
+//     document.getElementById('nav-menu').style.display = 'none';
+//   }
+    </script>
+  </body>
+</html>
